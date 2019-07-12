@@ -18,7 +18,7 @@ exports.db = function() {
 	con.connect(function(err) {
 		if (err) throw err;
 		console.log("Connected!");
-	}
+	});
 
 	//It will insert data into database
 	var query = con.query('INSERT INTO sh_output SET ?', out_file, function(err,result) {
